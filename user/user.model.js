@@ -8,6 +8,7 @@ const user = mongoose.Schema({
 	password: {type: String, required: true}
 });
 
+
 user.pre('save', function (callback) {
     var user = this;
 
